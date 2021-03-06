@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<h1>Welcome!!</h1>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body background="C:\Users\Lenovo\Desktop\SWETA_AXAR_PROJECT\Pics\p2.jpg">
+<h2>Select The Service You Need:)</h2>
+<ul style="list-style-type:none;">
+	<li style="padding-bottom:1em">
+	 <div class="dropdown">
+     <button class="dropbtn">Total Number of Appointments</button>
+     <div class="dropdown-content">
+      <a href="BCN.html">By Clinic Name</a>
+      <a href="BY.html">By Year</a>
+      <a href="BM.html">By Month</a>
+     </div>
+     </div>
+	</li>
+	<li style="padding-bottom:1em">
+		<form action="ControllerServletNoFutureAppointments" method="post">
+		<input class="dropbtn" type="submit" value="List Of patients with no future Appointment" style="cursor:pointer"></input></form>
+	</li>
+	<li style="padding-bottom:1em">
+		<form action="ControllerServletForUpdate" method="post">
+		<input class="dropbtn" type="submit" value="Update The Age of Patients" style="cursor:pointer"></input></form>
+	</li>
+	<li style="padding-bottom:1em">
+		<form action="ControllerServletForDelete" method="post">
+		<input class="dropbtn" type="submit" value="Click here to Delete Appointment Having amount less than 50" style="cursor:pointer"></input></form>
+	</li>
+	<li style="padding-bottom:1em">
+		<form action="TPT.html" method="post">
+		<input class="dropbtn" type="submit" value="Total of Procedure Type" style="cursor:pointer"></input></form>
+		
+	</li>
+</ul>
+
+</body>
+</html>
